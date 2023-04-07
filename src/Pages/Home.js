@@ -1,8 +1,8 @@
 import Header from '../Components/Header.js';
 import Banner from '../Components/Banner.js';
 import Footer from '../Components/Footer.js';
-//import AppartList from '../Components/AppartList.js';
-//import "../Styles/Home.css"
+import AppartList from '../Components/AppartList.js';
+import "../Styles/Home.css"
 
  
 function Home() {
@@ -10,6 +10,7 @@ function Home() {
         <div>     
         	<Header/>
             <Banner/>
+            <AppartList/>
             <Footer/>
             
         </div>
