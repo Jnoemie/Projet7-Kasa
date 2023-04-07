@@ -5,7 +5,6 @@ import NotFound from "./Pages/Notfound";
 import Appart from "./Pages/Appart";
 import About from "./Pages/About";
 
-
 import './Styles/App.css';
 
 function App() {

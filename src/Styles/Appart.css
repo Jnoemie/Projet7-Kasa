@@ -1,0 +1,79 @@
+.AppartContent{
+   
+    display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+    color:#FF6060 ;
+    width: 95%;
+    margin: 0 auto;
+   
+    }
+.AppartInfos{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-weight: 500;
+        font-size: 14px;}
+
+        button{
+            display: inline;
+            padding: 5px 15px;
+            margin-right: 10px;
+            cursor: pointer;
+            border-radius: 10px;
+            border: none;
+            color: #fff;
+            background-color: #FF6060;
+        }
+
+       button :hover{
+            box-shadow: 0 2px 8px rgb(0, 0, 0);
+        }
+    
+   .AppartContent div{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;  
+    }
+    .host{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;}
+
+       .host div{
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            gap: 0 10px;}
+           .hostName{
+                align-self: center;
+                flex-direction: column;
+            }
+            
+.host img{
+                width: 64px;
+                height: 64px;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 50%;
+            }
+            .hoststars{
+                display: flex;
+                gap: 10px;}
+
+                
+           .hoststars img{
+                    width: 30px;
+                    height: 30px;}
+
+       .AppartValue{          
+                     display: flex;
+                    justify-content: space-between;
+                    gap: 70px;
+                    margin: 30px auto;
+                    width: 95%;}
+                    
+                    .ValueItem{
+                        width: 50%;
+                    }        
