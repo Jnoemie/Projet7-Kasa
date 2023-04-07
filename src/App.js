@@ -6,7 +6,7 @@ import Appart from "./Pages/Appart";
 import About from "./Pages/About";
 
 
-import './App.css';
+import './Styles/App.css';
 
 function App() {
   return (
