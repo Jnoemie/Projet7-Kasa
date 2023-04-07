@@ -3,6 +3,7 @@ import {Routes, Route} from "react-router-dom";
 import Home from "./Pages/Home";
 import NotFound from "./Pages/Notfound";
 import Appart from "./Pages/Appart";
+import About from "./Pages/About";
 
 
 import './App.css';
@@ -15,6 +16,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/Appart/:id" element={<Appart />} />
+        <Route path="/About" element={<About />} />
+
       </Routes>
     </div>
   );

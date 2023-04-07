@@ -1,0 +1,31 @@
+.container-value{
+    margin: 30px;
+}
+
+.title-sectionValue{
+    background:#FF6060;
+    color:white;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    padding-right:10px;
+    text-align: start;
+    border-radius:5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content{
+    background: #F7F7F7;
+    margin: 0px;
+    padding: 10px;
+    text-align: start;
+}
+
+.container-vector{
+    transform: rotate(180deg);
+    transition: all 0.3s ease-out;
+}
+
+.title-sectionValue {
+    cursor: pointer;
+}
