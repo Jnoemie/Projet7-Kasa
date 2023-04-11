@@ -4,12 +4,19 @@ import Card from './Card';
 
 function AppartList() {
     return (
-        <div className='content-cards'>
-            {list.map((appart) => (
-                <Card key={appart.id} appart={appart}/>            
-            ))}
-        </div>
+        <main className='content-cards'>
+            {list.map(data => {
+                return (
+                    <Card
+                        key={data.id}
+                        id={data.id}
+                        title={data.title}
+                        cover={data.cover}
+                    />
+                )
+            })}
+        </main>
     )
-}
+        }
         
 export default AppartList;

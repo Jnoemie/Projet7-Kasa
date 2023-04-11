@@ -1,21 +1,27 @@
 import Header from '../Components/Header.js';
 import BannerBis from '../Components/BannerBis.js';
-import SectionValue from '../Components/Value.js';
+import Collapse from '../Components/Collapse.js';
 import Footer from '../Components/Footer.js';
-
+import { value } from '../Datas/value.js';
 import '../Styles/Appart.css'
 
 function About() {
     return (
-        <div className="app-container">     
-        	<Header/>
-            <main>
-                <BannerBis/>
-                <SectionValue/>
-            </main>
-            <Footer/>
-        </div>
-    )
+		<div>
+			<Header />
+			<BannerBis />
+			<main className='about_main'>
+				{value.map(data => {
+					return (
+						<div key={data.id} className="about_main_collapse">
+							<Collapse   title={data.title} content={data.description} />
+						</div>
+					)}
+				)}
+			</main>
+			<Footer />
+		</div>
+	)
 }
 
 export default About;

@@ -6,19 +6,18 @@ import { useState } from 'react'
 function Carousel({imageSlider}) {
 
     const [currentIndex, setCurrentIndex] = useState(0);
-    let NbImage= imageSlider.length;
-
+    
     const nextSlide = () => {
-		setCurrentIndex(currentIndex === NbImage - 1 ? 0 : currentIndex + 1); // on repart au premier slide quand on arrive au dernier
+		setCurrentIndex(currentIndex === imageSlider.length - 1 ? 0 : currentIndex + 1); // on repart au premier slide quand on arrive au dernier
 	};
 	const prevSlide = () => {
-		setCurrentIndex(currentIndex === 0 ? NbImage - 1 : currentIndex - 1); // on repart au dernier slide quand on est au premier
+		setCurrentIndex(currentIndex === 0 ? imageSlider.length - 1 : currentIndex - 1); // on repart au dernier slide quand on est au premier
 	};
 
 	
     return (
         <section style={{backgroundImage : `url(${imageSlider[currentIndex]})`}} className='carousel'>
-            {NbImage > 1 && 
+            {imageSlider.length > 1 && 
                 <>
                     <img 
                         className='Vector VectorRight' 

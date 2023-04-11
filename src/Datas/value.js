@@ -1,4 +1,4 @@
-export const values = [
+export const value = [
     {
         "id": "1",
         "title":"Fiabilité",
