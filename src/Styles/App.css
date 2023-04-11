@@ -2,7 +2,8 @@
   box-sizing: border-box;
 }
 
-html, body, 
+html,
+body,
 #root,
 .App {
   margin: 0;

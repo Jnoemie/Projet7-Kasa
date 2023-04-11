@@ -1,22 +1,22 @@
 .kasa-banner {
-    padding: 30px;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: space-between;
+  padding: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .menuPuce {
-    display: inline;
-    list-style: none;
-    margin : 10px;
+  display: inline;
+  list-style: none;
+  margin: 10px;
 }
 
 .menuPuce > a {
-    color: #FF6060;
-    text-decoration: none;
+  color: #ff6060;
+  text-decoration: none;
 }
 
 .menuPuce > a:hover {
-    color: #FF6060;
-    text-decoration:underline;
+  color: #ff6060;
+  text-decoration: underline;
 }

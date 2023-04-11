@@ -1,20 +1,20 @@
 body {
-    color: #FF6060;
-    text-align: center;
+  color: #ff6060;
+  text-align: center;
 }
 
-.notfound-txt{
-    font-size:150px;
-    margin-bottom: 0px;
+.notfound-txt {
+  font-size: 150px;
+  margin-bottom: 0px;
 }
 
-.notfound{
-    margin-bottom: 100px;
-    font-size: 20px;
+.notfound {
+  margin-bottom: 100px;
+  font-size: 20px;
 }
 
 .link-back {
-    font-size: small;
-    text-decoration: underline;
-    color:#FF6060;
+  font-size: small;
+  text-decoration: underline;
+  color: #ff6060;
 }

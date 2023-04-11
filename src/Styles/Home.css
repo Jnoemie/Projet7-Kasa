@@ -1,11 +1,11 @@
 .content-cards {
-    background: #F7F7F7;
-    border-radius: 25px;
-    margin:auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-between;
-    padding-left: 0px;
-    width: 95%;
+  background: #f7f7f7;
+  border-radius: 25px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-between;
+  padding-left: 0px;
+  width: 95%;
 }
