@@ -16,26 +16,39 @@ function Carousel({imageSlider}) {
 
 	
     return (
-        <section style={{backgroundImage : `url(${imageSlider[currentIndex]})`}} className='carousel'>
+        <section id='carousel'>
             {imageSlider.length > 1 && 
-                <>
+                (
                     <img 
-                        className='Vector VectorRight' 
+                        className='VectorRight' 
                         src={VectorRight} 
                         alt="show next slider" 
                         onClick={nextSlide}
                     />
-                    
+                )}
+                {imageSlider.length >1 &&    (
                     <img 
-                        className='Vector VectorLeft' 
+                        className='VectorLeft' 
                         src={VectorLeft} 
                         alt="show previous slider" 
                         onClick={prevSlide}
                     />
-                     <p className='slideCount'>{currentIndex + 1} / {imageSlider.length}</p>
-                    
-                </>
-            } 
+                    )}
+                    {imageSlider.map((slide, index) => (
+				<div
+					key={index} // mise en place du slider avec affichage conditionnel et opacity=1 quand le slide en cours vaut l'index
+					className={
+						currentIndex === index
+							? "slider bl-msk wh-msk active-anim"
+							: "slider bl-msk wh-msk"
+					}
+				>
+					{index === currentIndex && <img src={slide} alt="appartement à louer"/>}
+					{index === currentIndex && (
+                     <span className='slideCount'>{currentIndex + 1} / {imageSlider.length}</span>
+                    )}
+               </div>
+           )) } 
         </section>
     )
 }
