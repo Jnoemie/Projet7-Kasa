@@ -1,6 +1,4 @@
-.container-value {
-  margin: 30px;
-}
+
 
 .title-sectionValue {
   background: #ff6060;
@@ -12,6 +10,9 @@
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
+  cursor:pointer;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .content {
@@ -28,6 +29,8 @@
   color: #ff6060;
   transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out,
     height 0.2s ease-in-out;
+    background-color: #f7f7f7;
+    border-radius: 0 0 10px 10px;
 }
 .contentHidden {
   visibility: hidden;
@@ -39,20 +42,19 @@
   transition: all 0.3s ease-out;
 }
 
-.title-sectionValue {
-  cursor: pointer;
-}
 .arrow {
   transition: all 0.2s ease-in-out;
 }
 
 .arrow_up {
   transform: rotate(0deg);
-  width: 15px;
+  width: 20px;
   height: 20px;
+  padding: 2px;
 }
 .arrow_down {
   transform: rotate(180deg);
-  width: 15px;
+  width: 20px;
   height: 20px;
+  padding: 2px;
 }

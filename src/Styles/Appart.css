@@ -51,6 +51,13 @@ button :hover {
   align-self: center;
   flex-direction: column;
 }
+.about_main
+{
+  margin: 20px 200px ;
+  display:flex; 
+  flex-direction: column;
+  gap : 30px;
+}
 
 .host img {
   width: 64px;
@@ -63,7 +70,7 @@ button :hover {
   display: flex;
   gap: 10px;
 }
-
+p { margin: 0px;}
 .hoststars img {
   width: 30px;
   height: 30px;
@@ -79,8 +86,14 @@ button :hover {
 
 .ValueItem {
   width: 50%;
+  background: #F7F7F7;
+ height:100%;
+  border-radius: 30px;
+  text-align: start
 }
-
+h3{
+  margin:0;
+}
 @media screen and (max-width: 650px) {
   .AppartContent {
     display: flex;
@@ -96,4 +109,17 @@ button :hover {
     justify-content: space-between;
     align-items: center;
   }
+  .AppartValue{
+    flex-direction: column;
+   gap : 30px;
+
+  }
+  .ValueItem{
+    width: 100%;
+  }
+  .about_main
+  {
+    margin: 20px 20px ;
+  }
 }
+
