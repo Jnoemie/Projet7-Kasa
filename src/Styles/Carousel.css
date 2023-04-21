@@ -7,17 +7,17 @@
   overflow: hidden;
 }
 
-.bl-msk {
+.slide1 {
   background: rgba(0, 0, 0, 0.3);
   mix-blend-mode: darken;
   border-radius: 25px;
 }
 
-.wh-msk {
+.slide2 {
   background: #f7f7f7;
   border-radius: 10px;
 }
-.slider {
+.slide {
   position: absolute;
   left: 0%;
   right: 0%;
@@ -28,7 +28,7 @@
   height: 100%;
   width: 100%;
 }
-.slider img {
+.slide img {
   object-fit: cover;
   position: absolute;
   left: 0%;
@@ -52,7 +52,7 @@
   font-weight: 500;
   line-height: 142.6%;
 }
-.active-anim {
+.active{
   opacity: 1;
 }
 
@@ -82,7 +82,7 @@
     height: 410px;
     margin: 20px auto;
   }
-  .wh-msk {
+  .slide2 {
     border-radius: 20px;
   }
 

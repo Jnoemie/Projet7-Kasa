@@ -3,8 +3,9 @@ import VectorRight from "../Assets/vectorright.png";
 import VectorLeft from "../Assets/vectorleft.png";
 import { useState } from "react";
 
+// declaration de la fonction Carousel qui prend une liste d'images en tant que props 
 function Carousel({ imageSlider }) {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0); // import du hook Use state pour stocker l'index de l'image en cours d'affichage 
 
   const nextSlide = () => {
     setCurrentIndex(
@@ -17,7 +18,7 @@ function Carousel({ imageSlider }) {
     ); // on repart au dernier slide quand on est au premier
   };
 
-  return (
+  return ( // les fleche s'affiche que si il y a plus d'une image 
     <section id="carousel">
       {imageSlider.length > 1 && (
         <img
@@ -35,21 +36,22 @@ function Carousel({ imageSlider }) {
           onClick={prevSlide}
         />
       )}
-      {imageSlider.map((slide, index) => (
+      
+      {imageSlider.map((slide, index) => (// pour chaque image de la liste une div est creee 
         <div
-          key={index} // mise en place du slider avec affichage conditionnel et opacity=1 quand le slide en cours vaut l'index
+          key={index} 
           className={
             currentIndex === index
-              ? "slider bl-msk wh-msk active-anim"
-              : "slider bl-msk wh-msk"
+              ? "slide slide1 slide2 active"// definie si l'image doit s'afficher ou non // si l'image afficher correspônd a l'index en cours alors l'image s'affiche avec une opacité de 1
+              : "slide slide1 slide2"
           }
         >
           {index === currentIndex && (
-            <img src={slide} alt="appartement à louer" />
+            <img src={slide} alt="appartement à louer" />// affiche l'mage 
           )}
-          {index === currentIndex && (
+          {index === currentIndex && (// affichage de l'index
             <span className="slideCount">
-              {currentIndex + 1} / {imageSlider.length}
+              {currentIndex + 1} / {imageSlider.length} 
             </span>
           )}
         </div>
