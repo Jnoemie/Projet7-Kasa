@@ -7,7 +7,7 @@ function Header() {
   return (
     <div className="kasa-banner">
       <img
-        src={logo}
+        src={logo} // impot deu logo 
         alt="Kasa écrit en rouge avec une maison à la place du premier A"
         className="kasa-logo"
       />

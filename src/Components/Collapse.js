@@ -2,7 +2,7 @@ import "../Styles/Value.css";
 import React, { useState } from "react";
 import vectorTop from "../Assets/vectorTop.png";
 
-function Collapse({ title, content }) { //prise d'argument title et content 
+function Collapse({ title, content }) { //prise en compte de  title et content 
   const [toggle, setToggle] = useState(false); // utilisation de use state avec toggle initialisé sur false 
 
   return ( // onclick creer l'evenement qui place toggle a true (change l'image de la fleche )

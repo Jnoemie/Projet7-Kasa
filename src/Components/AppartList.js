@@ -3,7 +3,7 @@ import { list } from "../Datas/List";
 import Card from "./Card";
 
 function AppartList() {
-  return (
+  return ( // recuperation de donné que l'on appliaque a card 
     <main className="content-cards">
       {list.map((data) => {
         return (

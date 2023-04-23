@@ -1,28 +1,28 @@
 import "../Styles/Appart.css";
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import list from "../Datas/List";
-import Collapse from "./Collapse";
+import { useEffect, useState } from "react"; //import des fonction react pour gerer l'etat deet l'effet de la page
+import { useParams } from "react-router-dom";// import d'une fonction react pour recuperer les parametre de l'url 
+import list from "../Datas/List"; // import des données 
+import Collapse from "../Components/Collapse";
 import Carousel from "../Components/Carousel";
 
 import greyStar from "../Assets/grey_star.png";
 import redStar from "../Assets/red_star.png";
 
 function AppartDes() {
-  const [imageSlider, setImageSlider] = useState([]);
+  const [imageSlider, setImageSlider] = useState([]);// iniatialise les variable pour stocker les images a vide 
 
-  const idAppart = useParams("id").id;
+  const idAppart = useParams("id").id; // recupere l'id de l'appartement a partir des parametre de l'url 
   const dataAppart = list.filter((data) => data.id === idAppart);
 
-  useEffect(() => {
-    const dataCurrentAccomodation = list.filter((data) => data.id === idAppart);
-    setImageSlider(dataCurrentAccomodation[0].pictures);
+  useEffect(() => { // effectue une action au chargement de la page ou lors du changement dans l'id 
+    const dataCurrentAccomodation = list.filter((data) => data.id === idAppart);// filtre le liste de donnée pour recuperer les information de l'appartement 
+    setImageSlider(dataCurrentAccomodation[0].pictures);// mise a jour le variable d'etat avec les images de l'appartement 
   }, [idAppart]);
 
-  const name = dataAppart[0].host.name.split(" ");
-  const rating = dataAppart[0].rating;
-  const description = dataAppart[0].description;
-  const equipments = dataAppart[0].equipments;
+  const name = dataAppart[0].host.name.split(" ");// separe le nom de proprietaire en deux partie 
+  const rating = dataAppart[0].rating;// recupere la note 
+  const description = dataAppart[0].description;// recuper le description de l'appartement 
+  const equipments = dataAppart[0].equipments;// recupere les equipement 
 
   return (
     <>

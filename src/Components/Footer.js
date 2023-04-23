@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className="kasa-footer">
       <img
-        src={logoWhite}
+        src={logoWhite} // import du logo 
         alt="Kasa écrit en blanc avec une maison à la place du premier A"
         className="kasa-logoWhite"
       />

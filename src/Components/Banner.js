@@ -1,7 +1,7 @@
 import banner from "../Assets/banner.png";
 import "../Styles/Banner.css";
 
-function Banner() {
+function Banner() { // import de l'image de banniére
   return (
     <div className="container-banner">
       <img src={banner} alt="des montagnes" className="banner" />
