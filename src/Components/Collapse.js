@@ -7,7 +7,7 @@ function Collapse({ title, content }) { //prise en compte de  title et content
 
   return ( // onclick creer l'evenement qui place toggle a true (change l'image de la fleche )
     <>
-      <div className="container-value"> 
+      <div > 
         <h3 className="title-sectionValue" onClick={() => setToggle(!toggle)}> 
           {title} 
           <img

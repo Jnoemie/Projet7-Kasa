@@ -27,7 +27,7 @@ function AppartDes() {
   return (
     <>
       <Carousel imageSlider={imageSlider} />
-      <main className="Appart">
+      
         <div className="AppartContent">
           <div className="AppartInfos">
             <h1>{dataAppart[0].title}</h1>
@@ -72,7 +72,7 @@ function AppartDes() {
             <Collapse title={"Équipements"} content={equipments} />
           </div>
         </div>
-      </main>
+     
     </>
   );
 }

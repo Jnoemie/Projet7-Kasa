@@ -13,7 +13,7 @@ function About() {
       <main className="about_main">
         {value.map((data) => {
           return (
-            <div key={data.id} className="about_main_collapse">
+            <div key={data.id} >
               <Collapse title={data.title} content={data.description} />
             </div>
           );
