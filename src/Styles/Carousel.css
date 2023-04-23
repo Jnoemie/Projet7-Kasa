@@ -11,7 +11,7 @@
   background: rgba(0, 0, 0, 0.3);
   mix-blend-mode: darken;
   border-radius: 25px;
-  background: #f7f7f7;
+  background: #FFFFFF;
   border-radius: 10px;
   position: absolute;
   left: 0%;
@@ -33,7 +33,8 @@
   mix-blend-mode: normal;
   border-radius: 10px;
   height: 100%;
-  width: 100%;
+  width: 97%;
+  margin:auto;
 }
 
 .slideCount {
@@ -82,13 +83,13 @@
   }
 
   .VectorLeft {
-    width: 47px;
-    height: 79px;
+    width: 30px;
+    height: 40px;
     top: 42%;
   }
   .VectorRight {
-    width: 47px;
-    height: 79px;
-    top: 42%;
+    width: 30px;
+    height: 40px;
+    top: 45%;
   }
 }

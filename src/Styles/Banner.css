@@ -11,5 +11,27 @@
 }
 
 .banner-txt {
-  font-size: 20px;
+  font-size: 40px;
+  position: absolute;
+  color: white;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top:200px;
+
+}
+@media screen and (max-width:700px)
+{
+  .container-banner{
+    height:210px;
+  
+  }
+  .container-banner img{
+    object-fit: cover;
+    height: 100%;
+  }
+  .banner-txt{
+    font-size: 30px;
+    top:225px;
+  }
 }
