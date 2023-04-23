@@ -42,8 +42,8 @@ function Carousel({ imageSlider }) {
           key={index} 
           className={
             currentIndex === index
-              ? "slide slide1 slide2 active"// definie si l'image doit s'afficher ou non // si l'image afficher correspônd a l'index en cours alors l'image s'affiche avec une opacité de 1
-              : "slide slide1 slide2"
+              ? "slide active"// definie si l'image doit s'afficher ou non // si l'image afficher correspônd a l'index en cours alors l'image s'affiche avec une opacité de 1
+              : "slide "
           }
         >
           {index === currentIndex && (

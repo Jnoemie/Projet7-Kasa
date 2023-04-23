@@ -2,14 +2,14 @@ import "../Styles/Value.css";
 import React, { useState } from "react";
 import vectorTop from "../Assets/vectorTop.png";
 
-function Collapse({ title, content }) {
-  const [toggle, setToggle] = useState(false);
+function Collapse({ title, content }) { //prise d'argument title et content 
+  const [toggle, setToggle] = useState(false); // utilisation de use state avec toggle initialisé sur false 
 
-  return (
+  return ( // onclick creer l'evenement qui place toggle a true (change l'image de la fleche )
     <>
-      <div className="container-value">
-        <h3 className="title-sectionValue" onClick={() => setToggle(!toggle)}>
-          {title}
+      <div className="container-value"> 
+        <h3 className="title-sectionValue" onClick={() => setToggle(!toggle)}> 
+          {title} 
           <img
             className={toggle ? "arrow arrow_up" : "arrow arrow_down"}
             src={vectorTop}
@@ -24,7 +24,7 @@ function Collapse({ title, content }) {
             : content}
         </div>
       </div>
-    </>
+    </>// en fonction de la valeur de toggle  on creer un div qui map chaque element de tableau content en un element p 
   );
 }
 export default Collapse;

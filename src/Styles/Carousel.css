@@ -7,17 +7,12 @@
   overflow: hidden;
 }
 
-.slide1 {
+.slide {
   background: rgba(0, 0, 0, 0.3);
   mix-blend-mode: darken;
   border-radius: 25px;
-}
-
-.slide2 {
   background: #f7f7f7;
   border-radius: 10px;
-}
-.slide {
   position: absolute;
   left: 0%;
   right: 0%;
